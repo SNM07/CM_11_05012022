@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Accueil from "./Accueil";
+import APropos from "./APropos";
+import FicheLogement from "./FicheLogement";
+import Erreur404 from "./Erreur404";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>test</h1>
-      </header>
+      
+        <Router>
+          <Switch>
+            <Route path="/" exact component={Accueil} />
+            <Route path="/Accueil" component={Accueil} />
+            <Route path="/Fiche-Logement" component={FicheLogement} />
+            <Route path="/A-Propos" component={APropos} />
+            <Route path="/" component={Erreur404} />
+          </Switch>
+        </Router>
     </div>
   );
 }
