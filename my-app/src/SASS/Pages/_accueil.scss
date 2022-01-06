@@ -1,0 +1,46 @@
+#homePageBanner {
+  position: relative;
+  margin-bottom: 6vw;
+
+  & #screen {
+    background: #000000;
+    mix-blend-mode: darken;
+    position: absolute;
+    width: 94vw;
+    transform: translate(2vw);
+    height: 17vw;
+    opacity: 0.3;
+    z-index: 20;
+    border-radius: 25px;
+  }
+  & #imageHome {
+    width: 94vw;
+    height: 17vw;
+    object-fit: cover;
+    transform: translate(2vw);
+    border-radius: 25px;
+  }
+  & #textHome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.8em;
+    z-index: 40;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#cardGridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    margin-bottom: 200px;
+  }
+}

@@ -1,0 +1,24 @@
+#header{
+    margin: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & #logoHeader{
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden; 
+    max-width: 18vw;
+    }
+    & #menu{
+        display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr;
+grid-gap: 60px;
+& .nav{
+    text-decoration: none;
+    color: $main-color;
+}
+& .selected{
+    text-decoration: underline;
+}
+}
+}

@@ -1,0 +1,19 @@
+#erreurContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $main-color;
+  & #titreErreur {
+    font-weight: 700;
+    font-size: 20vw;
+  }
+  & #textErreur {
+    font-size: 1.4em;
+  }
+  & #backHome {
+    color: $main-color;
+    font-size: 0.8em;
+    margin-top: 12vw;
+  }
+}
