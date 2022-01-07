@@ -47,9 +47,10 @@
       position: relative;
       & h1 {
         margin-bottom: 1vw;
+        font-size: 4vw;
       }
       & h2 {
-        font-size: 0.9em;
+        font-size: 2vw;
       }
     }
     & .tagsInfos {
@@ -65,24 +66,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 20vw;
+        width: 17vw;
         align-self: end;
         margin-bottom: 3vw;
         & .hostName {
+          font-size: 1.6vw;
           text-align: right;
           line-height: 1.4;
         }
         & .hostPic {
           border-radius: 50%;
-          width: 10vw;
+          width: 8vw;
         }
       }
       & .starsRating {
         align-self: end;
         & .starsContainer {
           display: flex;
-          justify-content: space-evenly;
-          width: 25vw;
+          justify-content: space-between;
+          width: 22vw;
         }
       }
     }

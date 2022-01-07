@@ -4,7 +4,7 @@ import leftArrow from "../Images/arrowLeft.svg";
 
 class Carousel extends Component {
   state = {
-    currentPicture: 0
+    currentPicture: 0,
   };
 
   goToNextImage = () => {
@@ -12,11 +12,11 @@ class Carousel extends Component {
       currentPicture:
         prevState.currentPicture === 0
           ? this.props.images.length - 1
-          : prevState.currentPicture - 1
+          : prevState.currentPicture - 1,
     }));
   };
 
-  goToPreviousImage= () => {
+  goToPreviousImage = () => {
     this.setState((prevState) => ({
       currentPicture:
         prevState.currentPicture === this.props.images.length - 1
@@ -31,7 +31,11 @@ class Carousel extends Component {
 
     return (
       <div className="carousel">
-        <img src={images && images[currentPicture]} class="flatPic" alt={"flatPic"} />
+        <img
+          src={images && images[currentPicture]}
+          className="flatPic"
+          alt={"flatPic"}
+        />
 
         {images && images.length > 1 && (
           <div className="leftArrow" onClick={() => this.goToPreviousImage()}>
@@ -45,9 +49,8 @@ class Carousel extends Component {
           </div>
         )}
         <div className="picCounter">
-          {currentPicture+1}/{images && images.length}
+          {currentPicture + 1}/{images && images.length}
         </div>
-
       </div>
     );
   }

@@ -28,7 +28,7 @@ body {
   width: 80vw;
   height: 47px;
   border-radius: 5px;
-  background: #FF6060;
+  background: #ff6060;
   color: white;
   font-weight: 500;
   font-size: 1rem;
@@ -46,7 +46,7 @@ body {
   width: 100%;
   padding: 25px 12px;
   border-radius: 0 0 5px 5px;
-  color: #FF6060;
+  color: #ff6060;
   font-size: 0.9rem;
 }
 .aboutContent .shownText {
@@ -54,7 +54,7 @@ body {
 }
 
 .tags {
-  background-color: #FF6060;
+  background-color: #ff6060;
   color: white;
   font-size: 12px;
   border-radius: 10px;
@@ -163,7 +163,7 @@ body {
 }
 
 #header {
-  margin: 8vw;
+  margin: 4vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +181,8 @@ body {
 }
 #header #menu .nav {
   text-decoration: none;
-  color: #FF6060;
+  color: #ff6060;
+  font-weight: bold;
 }
 #header #menu .selected {
   text-decoration: underline;
@@ -214,7 +215,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FF6060;
+  color: #ff6060;
 }
 .flatPage .carousel {
   width: 92vw;
@@ -261,9 +262,10 @@ body {
 }
 .flatPage .containerInfos .titleInfos h1 {
   margin-bottom: 1vw;
+  font-size: 4vw;
 }
 .flatPage .containerInfos .titleInfos h2 {
-  font-size: 0.9em;
+  font-size: 2vw;
 }
 .flatPage .containerInfos .tagsInfos {
   display: flex;
@@ -279,25 +281,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20vw;
+  width: 17vw;
   align-self: end;
   margin-bottom: 3vw;
 }
 .flatPage .containerInfos .hostInfos .host .hostName {
+  font-size: 1.6vw;
   text-align: right;
   line-height: 1.4;
 }
 .flatPage .containerInfos .hostInfos .host .hostPic {
   border-radius: 50%;
-  width: 10vw;
+  width: 8vw;
 }
 .flatPage .containerInfos .hostInfos .starsRating {
   align-self: end;
 }
 .flatPage .containerInfos .hostInfos .starsRating .starsContainer {
   display: flex;
-  justify-content: space-evenly;
-  width: 25vw;
+  justify-content: space-between;
+  width: 22vw;
 }
 .flatPage .containerDescription {
   margin-bottom: 200px;
@@ -349,7 +352,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FF6060;
+  color: #ff6060;
 }
 #erreurContainer #titreErreur {
   font-weight: 700;
@@ -359,9 +362,10 @@ body {
   font-size: 1.4em;
 }
 #erreurContainer #backHome {
-  color: #FF6060;
+  color: #ff6060;
   font-size: 0.8em;
-  margin-top: 12vw;
+  margin-top: 10vw;
+  margin-bottom: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

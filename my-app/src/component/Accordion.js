@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import arrowDown from "../Images/arrowDown.svg";
 import arrowUp from "../Images/arrowUp.svg";
 
-
-
 class Accordion extends Component {
   constructor(props) {
     super(props);

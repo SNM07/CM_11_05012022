@@ -9,10 +9,10 @@ class SingleCard extends Component {
   render() {
     return (
       <div className="flatCard">
-        <div className='imageContainer'>
-        <img src={this.props.cover} alt="" />
+        <div className="imageContainer">
+          <img src={this.props.cover} alt="" />
 
-        <span className="flatCardTitle">{this.props.title}</span>
+          <span className="flatCardTitle">{this.props.title}</span>
         </div>
       </div>
     );

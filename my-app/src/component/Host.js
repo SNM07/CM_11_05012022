@@ -7,7 +7,9 @@ class Host extends Component {
     const lastname = this.props.name.slice(endofname);
     return (
       <div className="host">
-        <div className="hostName">{name} <br /> {lastname}</div>
+        <div className="hostName">
+          {name} <br /> {lastname}
+        </div>
         <img src={this.props.avatar} alt="hostPic" className="hostPic" />
       </div>
     );

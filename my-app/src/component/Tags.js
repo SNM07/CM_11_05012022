@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Tags extends Component {
-    render() {
+  render() {
     return <span className="tags">{this.props.name}</span>;
   }
 }
