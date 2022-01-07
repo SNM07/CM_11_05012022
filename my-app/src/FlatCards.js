@@ -27,7 +27,7 @@ class FlatCards extends Component {
     return (
       <div className="cardContainer">
         {data.map((card) => (
-            <Link key={`flat-${card.id}`} to= {`/flat/${card.id}`}>
+            <Link key={`Fiche-Logement-${card.id}`} to= {`/Fiche-Logement/${card.id}`}>
           <SingleCard cover={card.cover} id={card.id} title={card.title} /></Link>
         ))}
       </div>
