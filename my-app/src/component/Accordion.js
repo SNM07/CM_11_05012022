@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import arrowDown from "./Images/arrowDown.svg";
-import arrowUp from "./Images/arrowUp.svg";
+import arrowDown from "../Images/arrowDown.svg";
+import arrowUp from "../Images/arrowUp.svg";
 
 
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import ServiceFlatCards from "../services/ServiceFlatCards";
 
 
 import SingleCard from "./SingleCard";
@@ -14,12 +15,8 @@ class FlatCards extends Component {
   }
 
   componentDidMount() {
-    fetch(".././logements.json")
-      .then((response) => response.json())
-      .then((data) => this.setState({ data }));
+    ServiceFlatCards(this);
   }
-
-
 
   render() {
     const { data } = this.state;

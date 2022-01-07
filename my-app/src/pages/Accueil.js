@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import FlatCards from "./FlatCards";
-import imageHome from "./Images/imageHome.png"
+import FlatCards from "../component/FlatCards";
+import imageHome from ".././Images/imageHome.png"
 
 class Accueil extends Component {
     render() {

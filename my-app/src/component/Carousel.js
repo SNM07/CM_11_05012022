@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import rightArrow from "./Images/arrowRight.svg";
-import leftArrow from "./Images/arrowLeft.svg";
+import rightArrow from "../Images/arrowRight.svg";
+import leftArrow from "../Images/arrowLeft.svg";
 
 class Carousel extends Component {
   state = {
@@ -31,17 +31,17 @@ class Carousel extends Component {
 
     return (
       <div className="carousel">
-        <img src={images && images[currentPicture]} alt={"flatPic"} />
+        <img src={images && images[currentPicture]} class="flatPic" alt={"flatPic"} />
 
         {images && images.length > 1 && (
           <div className="leftArrow" onClick={() => this.goToPreviousImage()}>
-            <img className="leftArrow" src={leftArrow} alt="leftArrow" />
+            <img className="leftArrowIcon" src={leftArrow} alt="leftArrow" />
           </div>
         )}
 
         {images && images.length > 1 && (
           <div className="rightArrow" onClick={() => this.goToNextImage()}>
-            <img className="rightArrow" src={rightArrow} alt="rightArrow" />
+            <img className="rightArrowIcon" src={rightArrow} alt="rightArrow" />
           </div>
         )}
         <div className="picCounter">

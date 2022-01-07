@@ -1,6 +1,6 @@
 import { Component } from "react";
-import Star from "./Images/star.svg";
-import StarEmpty from "./Images/starempty.svg";
+import Star from "../Images/star.svg";
+import StarEmpty from "../Images/starempty.svg";
 
 class Rating extends Component {
   render() {

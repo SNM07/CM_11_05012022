@@ -53,6 +53,19 @@ body {
   display: block;
 }
 
+.tags {
+  background-color: #FF6060;
+  color: white;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  display: block;
+  margin-right: 1vw;
+}
+
 .flatCard {
   width: 30vw;
   height: 30vw;
@@ -194,6 +207,109 @@ body {
 #footer #textFooter {
   color: white;
   font-size: 12px;
+}
+
+.flatPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+}
+.flatPage .carousel {
+  width: 92vw;
+  border-radius: 25px;
+  position: relative;
+}
+.flatPage .carousel .flatPic {
+  width: 92vw;
+  height: 50vw;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.flatPage .carousel .leftArrow {
+  position: absolute;
+  top: 21vw;
+  left: 1vw;
+}
+.flatPage .carousel .leftArrow .leftArrowIcon {
+  height: 8vw;
+}
+.flatPage .carousel .rightArrow {
+  position: absolute;
+  top: 21vw;
+  right: 1vw;
+}
+.flatPage .carousel .rightArrow .rightArrowIcon {
+  height: 8vw;
+}
+.flatPage .carousel .picCounter {
+  position: absolute;
+  left: 46vw;
+  bottom: 4vw;
+  font-weight: bold;
+  color: white;
+}
+.flatPage .containerInfos {
+  width: 92vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 3vw 0 4vw 0;
+}
+.flatPage .containerInfos .titleInfos {
+  position: relative;
+}
+.flatPage .containerInfos .titleInfos h1 {
+  margin-bottom: 1vw;
+}
+.flatPage .containerInfos .titleInfos h2 {
+  font-size: 0.9em;
+}
+.flatPage .containerInfos .tagsInfos {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.flatPage .containerInfos .hostInfos {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+.flatPage .containerInfos .hostInfos .host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vw;
+  align-self: end;
+  margin-bottom: 3vw;
+}
+.flatPage .containerInfos .hostInfos .host .hostName {
+  text-align: right;
+  line-height: 1.4;
+}
+.flatPage .containerInfos .hostInfos .host .hostPic {
+  border-radius: 50%;
+  width: 10vw;
+}
+.flatPage .containerInfos .hostInfos .starsRating {
+  align-self: end;
+}
+.flatPage .containerInfos .hostInfos .starsRating .starsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25vw;
+}
+.flatPage .containerDescription {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 92vw;
+}
+.flatPage .containerDescription .aboutContent {
+  width: 42vw;
+}
+.flatPage .containerDescription .aboutContent h2 {
+  width: auto;
 }
 
 #aboutPage {
