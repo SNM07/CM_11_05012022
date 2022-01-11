@@ -7,7 +7,7 @@ class Carousel extends Component {
     currentPicture: 0,
   };
 
-  goToNextImage = () => {
+  goToPreviousImage = () => {
     this.setState((prevState) => ({
       currentPicture:
         prevState.currentPicture === 0
@@ -16,7 +16,7 @@ class Carousel extends Component {
     }));
   };
 
-  goToPreviousImage = () => {
+  goToNextImage = () => {
     this.setState((prevState) => ({
       currentPicture:
         prevState.currentPicture === this.props.images.length - 1

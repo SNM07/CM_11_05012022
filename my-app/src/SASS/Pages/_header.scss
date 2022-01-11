@@ -34,9 +34,9 @@
       text-align: right;
       @include large-only {
         text-transform: none;
-        font-size: auto;
-        line-height: auto;
-        text-align: auto;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: inherit;
       }
     }
     & .selected {

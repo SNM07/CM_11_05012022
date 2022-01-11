@@ -285,9 +285,9 @@ body {
 @media screen and (min-width: 768px) {
   #header #menu .nav {
     text-transform: none;
-    font-size: auto;
-    line-height: auto;
-    text-align: auto;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: inherit;
   }
 }
 #header #menu .selected {
@@ -379,7 +379,7 @@ body {
 @media screen and (min-width: 768px) {
   .flatPage .carousel .rightArrow {
     top: 21vw;
-    left: 1vw;
+    right: 1vw;
   }
 }
 .flatPage .carousel .rightArrow .rightArrowIcon {
@@ -417,7 +417,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .flatPage .containerInfos .titleInfos {
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
 }
 .flatPage .containerInfos .titleInfos h1 {

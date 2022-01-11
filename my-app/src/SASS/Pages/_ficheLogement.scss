@@ -41,7 +41,7 @@
       right: 2vw;
       @include large-only {
         top: 21vw;
-        left: 1vw;
+        right: 1vw;
       }
       & .rightArrowIcon {
         height: 8vw;
@@ -74,7 +74,7 @@
       position: relative;
       margin-bottom: 8vw;
       @include large-only {
-        margin-bottom: auto;
+        margin-bottom: 0;
       }
       & h1 {
         margin-bottom: 1vw;
