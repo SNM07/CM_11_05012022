@@ -1,13 +1,23 @@
 .flatCard {
-  width: 30vw;
-  height: 30vw;
   position: relative;
+  width: 90vw;
+  height: 70vw;
+  margin-bottom: 5vw;
+  @include large-only {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: auto;
+  }
   & .imageContainer {
     position: relative;
     display: inline-block;
-    width: 30vw;
-    height: 30vw;
     border-radius: 10px;
+    width: 90vw;
+    height: 70vw;
+    @include large-only {
+      width: 30vw;
+      height: 30vw;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -51,20 +61,29 @@
     }
 
     & img {
-      width: 30vw;
-      height: 30vw;
       object-fit: cover;
       border-radius: 10px;
       z-index: -1;
+      width: 90vw;
+      height: 70vw;
+      @include large-only {
+        width: 30vw;
+        height: 30vw;
+      }
     }
     & span {
       color: white;
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 3vw;
+      left: 3vw;
       z-index: 10;
-      font-size: 0.9em;
+      font-size: 1em;
       margin: 2vw;
+      @include large-only {
+        font-size: 0.9em;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }

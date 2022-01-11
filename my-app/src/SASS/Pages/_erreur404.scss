@@ -4,17 +4,26 @@
   justify-content: center;
   align-items: center;
   color: $main-color;
+  transform: translate(0, 30%);
   & #titreErreur {
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 20vw;
   }
   & #textErreur {
-    font-size: 1.4em;
+    text-align: center;
+    font-size: 1.2em;
+    width: 80%;
+    margin-bottom: 20vw;
+    @include large-only {
+      width: auto;
+      font-size: 1.4em;
+      margin-bottom: auto;
+    }
   }
   & #backHome {
     color: $main-color;
     font-size: 0.8em;
     margin-top: 10vw;
-    margin-bottom: 200px;;
+    margin-bottom: 200px;
   }
 }

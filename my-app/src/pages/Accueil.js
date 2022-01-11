@@ -3,6 +3,9 @@ import FlatCards from "../component/FlatCards";
 import imageHome from ".././Images/imageHome.png";
 
 class Accueil extends Component {
+  componentDidMount() {
+    document.title = "Kasa";
+  }
   render() {
     return (
       <div id="homePage">

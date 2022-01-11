@@ -3,6 +3,9 @@ import Accordion from "../component/Accordion";
 import imageAbout from ".././Images/imageApropos.png";
 
 class APropos extends Component {
+  componentDidMount() {
+    document.title = "À Propos";
+  }
   render() {
     return (
       <div id="aboutPage">

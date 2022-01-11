@@ -9,19 +9,32 @@
       background: #000000;
       mix-blend-mode: darken;
       position: absolute;
-      width: 94vw;
-      transform: translate(2vw);
-      height: 20vw;
+      width: 90vw;
+      transform: translate(5vw);
+      height: 60vw;
       opacity: 0.3;
       z-index: 20;
-      border-radius: 25px;
+      border-radius: 10px;
+      @include large-only {
+        transform: translate(2vw);
+        width: 94vw;
+        height: 20vw;
+        border-radius: 25px;
+      }
     }
     & #imageAbout {
-      width: 94vw;
-      height: 20vw;
+      width: 90vw;
+      height: 60vw;
       object-fit: cover;
-      transform: translate(2vw);
-      border-radius: 25px;
+      transform: translate(5vw);
+      border-radius: 10px;
+      @include large-only {
+        transform: translate(2vw);
+        object-fit: cover;
+        width: 94vw;
+        height: 20vw;
+        border-radius: 25px;
+      }
     }
   }
   & #aboutContainer {
@@ -29,6 +42,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //padding-bottom: 200px;
   }
 }

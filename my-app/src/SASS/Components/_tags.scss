@@ -8,5 +8,8 @@
   text-align: center;
   line-height: 25px;
   display: block;
-  margin-right: 1vw;
+  margin-right: 3vw;
+  @include large-only {
+    margin-right: 1vw;
+  }
 }

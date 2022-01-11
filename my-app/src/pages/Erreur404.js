@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 class Erreur404 extends Component {
+  componentDidMount() {
+    document.title = "Erreur 404";
+  }
   render() {
     return (
       <div id="erreurContainer">

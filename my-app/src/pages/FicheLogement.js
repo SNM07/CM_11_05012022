@@ -19,6 +19,8 @@ class FicheLogement extends Component {
   }
 
   render() {
+    document.title = this.state.data.title;
+
     const { data } = this.state;
     const tagsData = this.state.data.tags;
     const hostData = this.state.data.host;

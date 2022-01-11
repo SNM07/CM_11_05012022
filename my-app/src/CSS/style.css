@@ -14,19 +14,23 @@ body {
 }
 
 .aboutContent {
-  width: 80vw;
   height: 100%;
   min-width: 300px;
   background: #f7f7f7;
   border-radius: 5px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .aboutContent {
+    width: 80vw;
+  }
+}
 .aboutContent img {
   cursor: pointer;
 }
 .aboutContent h2 {
-  width: 80vw;
-  height: 47px;
+  width: 90vw;
+  height: 38px;
   border-radius: 5px;
   background: #ff6060;
   color: white;
@@ -36,6 +40,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .aboutContent h2 {
+    width: 80vw;
+    height: 47px;
+  }
 }
 .aboutContent h2:hover {
   cursor: pointer;
@@ -63,20 +73,39 @@ body {
   text-align: center;
   line-height: 25px;
   display: block;
-  margin-right: 1vw;
+  margin-right: 3vw;
+}
+@media screen and (min-width: 768px) {
+  .tags {
+    margin-right: 1vw;
+  }
 }
 
 .flatCard {
-  width: 30vw;
-  height: 30vw;
   position: relative;
+  width: 90vw;
+  height: 70vw;
+  margin-bottom: 5vw;
+}
+@media screen and (min-width: 768px) {
+  .flatCard {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: auto;
+  }
 }
 .flatCard .imageContainer {
   position: relative;
   display: inline-block;
-  width: 30vw;
-  height: 30vw;
   border-radius: 10px;
+  width: 90vw;
+  height: 70vw;
+}
+@media screen and (min-width: 768px) {
+  .flatCard .imageContainer {
+    width: 30vw;
+    height: 30vw;
+  }
 }
 .flatCard .imageContainer::after {
   content: "";
@@ -100,54 +129,98 @@ body {
   border-radius: 10px;
 }
 .flatCard .imageContainer img {
-  width: 30vw;
-  height: 30vw;
   object-fit: cover;
   border-radius: 10px;
   z-index: -1;
+  width: 90vw;
+  height: 70vw;
+}
+@media screen and (min-width: 768px) {
+  .flatCard .imageContainer img {
+    width: 30vw;
+    height: 30vw;
+  }
 }
 .flatCard .imageContainer span {
   color: white;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 3vw;
+  left: 3vw;
   z-index: 10;
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 2vw;
+}
+@media screen and (min-width: 768px) {
+  .flatCard .imageContainer span {
+    font-size: 0.9em;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 #homePageBanner {
   position: relative;
-  margin-bottom: 6vw;
+  margin-bottom: 5vw;
+}
+@media screen and (min-width: 768px) {
+  #homePageBanner {
+    margin-bottom: 6vw;
+  }
 }
 #homePageBanner #screen {
   background: #000000;
   mix-blend-mode: darken;
   position: absolute;
-  width: 94vw;
-  transform: translate(2vw);
-  height: 17vw;
+  transform: translate(5vw);
+  width: 90vw;
+  height: 34vw;
   opacity: 0.3;
   z-index: 20;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  #homePageBanner #screen {
+    transform: translate(2vw);
+    width: 94vw;
+    height: 17vw;
+    border-radius: 25px;
+  }
 }
 #homePageBanner #imageHome {
-  width: 94vw;
-  height: 17vw;
+  width: 90vw;
+  height: 34vw;
   object-fit: cover;
-  transform: translate(2vw);
-  border-radius: 25px;
+  transform: translate(5vw);
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  #homePageBanner #imageHome {
+    transform: translate(2vw);
+    width: 94vw;
+    height: 17vw;
+    border-radius: 25px;
+  }
 }
 #homePageBanner #textHome {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 42%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 1.8em;
+  font-size: 1.5em;
   z-index: 40;
-  width: 100%;
-  text-align: center;
+  width: 58%;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  #homePageBanner #textHome {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #cardGridContainer {
@@ -156,33 +229,66 @@ body {
   align-items: center;
 }
 #cardGridContainer .cardContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2vw;
   margin-bottom: 200px;
+}
+@media screen and (min-width: 768px) {
+  #cardGridContainer .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
 }
 
 #header {
-  margin: 4vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  #header {
+    margin: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 #header #logoHeader {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  max-width: 18vw;
+  max-width: 30vw;
+}
+@media screen and (min-width: 768px) {
+  #header #logoHeader {
+    max-width: 18vw;
+  }
 }
 #header #menu {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
+  grid-gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  #header #menu {
+    grid-gap: 60px;
+  }
 }
 #header #menu .nav {
   text-decoration: none;
   color: #ff6060;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 10vw;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  #header #menu .nav {
+    text-transform: none;
+    font-size: auto;
+    line-height: auto;
+    text-align: auto;
+  }
 }
 #header #menu .selected {
   text-decoration: underline;
@@ -201,13 +307,23 @@ body {
 }
 #footer #logoFooter {
   margin-bottom: 20px;
-  max-width: 12vw;
+  max-width: 26vw;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+@media screen and (min-width: 768px) {
+  #footer #logoFooter {
+    max-width: 12vw;
+  }
+}
 #footer #textFooter {
   color: white;
-  font-size: 12px;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  #footer #textFooter {
+    font-size: 12px;
+  }
 }
 
 .flatPage {
@@ -218,54 +334,110 @@ body {
   color: #ff6060;
 }
 .flatPage .carousel {
-  width: 92vw;
-  border-radius: 25px;
+  width: 90vw;
+  border-radius: 10px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .flatPage .carousel {
+    border-radius: 25px;
+    width: 92vw;
+  }
+}
 .flatPage .carousel .flatPic {
-  width: 92vw;
-  height: 50vw;
-  border-radius: 25px;
+  width: 90vw;
+  height: 70vw;
+  border-radius: 10px;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .carousel .flatPic {
+    border-radius: 25px;
+    width: 92vw;
+    height: 50vw;
+  }
 }
 .flatPage .carousel .leftArrow {
   position: absolute;
-  top: 21vw;
-  left: 1vw;
+  top: 31vw;
+  left: 2vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .carousel .leftArrow {
+    top: 21vw;
+    left: 1vw;
+  }
 }
 .flatPage .carousel .leftArrow .leftArrowIcon {
   height: 8vw;
 }
 .flatPage .carousel .rightArrow {
   position: absolute;
-  top: 21vw;
-  right: 1vw;
+  top: 31vw;
+  right: 2vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .carousel .rightArrow {
+    top: 21vw;
+    left: 1vw;
+  }
 }
 .flatPage .carousel .rightArrow .rightArrowIcon {
   height: 8vw;
 }
 .flatPage .carousel .picCounter {
-  position: absolute;
-  left: 46vw;
-  bottom: 4vw;
-  font-weight: bold;
-  color: white;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .carousel .picCounter {
+    display: block;
+    position: absolute;
+    left: 46vw;
+    bottom: 4vw;
+    font-weight: bold;
+    color: white;
+  }
 }
 .flatPage .containerInfos {
-  width: 92vw;
+  width: 90vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 3vw 0 4vw 0;
 }
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos {
+    width: 92vw;
+    flex-direction: row;
+  }
+}
 .flatPage .containerInfos .titleInfos {
   position: relative;
+  margin-bottom: 8vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .titleInfos {
+    margin-bottom: auto;
+  }
 }
 .flatPage .containerInfos .titleInfos h1 {
   margin-bottom: 1vw;
-  font-size: 4vw;
+  font-size: 6vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .titleInfos h1 {
+    font-size: 4vw;
+  }
 }
 .flatPage .containerInfos .titleInfos h2 {
-  font-size: 2vw;
+  font-size: 4vw;
+  margin-bottom: 12vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .titleInfos h2 {
+    font-size: 2vw;
+    margin-bottom: auto;
+  }
 }
 .flatPage .containerInfos .tagsInfos {
   display: flex;
@@ -274,25 +446,51 @@ body {
 }
 .flatPage .containerInfos .hostInfos {
   display: flex;
-  flex-direction: column;
-  width: 25vw;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin-bottom: 2vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .hostInfos {
+    width: 25vw;
+    flex-direction: column;
+    margin-bottom: auto;
+  }
 }
 .flatPage .containerInfos .hostInfos .host {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 17vw;
+  width: 33vw;
   align-self: end;
-  margin-bottom: 3vw;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .hostInfos .host {
+    margin-bottom: 3vw;
+    width: 17vw;
+  }
 }
 .flatPage .containerInfos .hostInfos .host .hostName {
-  font-size: 1.6vw;
+  font-size: 4vw;
   text-align: right;
   line-height: 1.4;
 }
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .hostInfos .host .hostName {
+    font-size: 1.6vw;
+  }
+}
 .flatPage .containerInfos .hostInfos .host .hostPic {
   border-radius: 50%;
-  width: 8vw;
+  width: 12vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .hostInfos .host .hostPic {
+    width: 8vw;
+  }
 }
 .flatPage .containerInfos .hostInfos .starsRating {
   align-self: end;
@@ -302,14 +500,36 @@ body {
   justify-content: space-between;
   width: 22vw;
 }
+.flatPage .containerInfos .hostInfos .starsRating .starsContainer span {
+  transform: scale(0.6);
+  width: 1%;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerInfos .hostInfos .starsRating .starsContainer span {
+    width: auto;
+    transform: none;
+  }
+}
 .flatPage .containerDescription {
   margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
-  width: 92vw;
+  width: 90vw;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerDescription {
+    width: 92vw;
+    flex-direction: row;
+  }
 }
 .flatPage .containerDescription .aboutContent {
-  width: 42vw;
+  width: 90vw;
+}
+@media screen and (min-width: 768px) {
+  .flatPage .containerDescription .aboutContent {
+    width: 42vw;
+  }
 }
 .flatPage .containerDescription .aboutContent h2 {
   width: auto;
@@ -326,19 +546,36 @@ body {
   background: #000000;
   mix-blend-mode: darken;
   position: absolute;
-  width: 94vw;
-  transform: translate(2vw);
-  height: 20vw;
+  width: 90vw;
+  transform: translate(5vw);
+  height: 60vw;
   opacity: 0.3;
   z-index: 20;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  #aboutPage #aboutPageBanner #screenAbout {
+    transform: translate(2vw);
+    width: 94vw;
+    height: 20vw;
+    border-radius: 25px;
+  }
 }
 #aboutPage #aboutPageBanner #imageAbout {
-  width: 94vw;
-  height: 20vw;
+  width: 90vw;
+  height: 60vw;
   object-fit: cover;
-  transform: translate(2vw);
-  border-radius: 25px;
+  transform: translate(5vw);
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  #aboutPage #aboutPageBanner #imageAbout {
+    transform: translate(2vw);
+    object-fit: cover;
+    width: 94vw;
+    height: 20vw;
+    border-radius: 25px;
+  }
 }
 #aboutPage #aboutContainer {
   display: flex;
@@ -353,13 +590,24 @@ body {
   justify-content: center;
   align-items: center;
   color: #ff6060;
+  transform: translate(0, 30%);
 }
 #erreurContainer #titreErreur {
-  font-weight: 700;
+  font-weight: bolder;
   font-size: 20vw;
 }
 #erreurContainer #textErreur {
-  font-size: 1.4em;
+  text-align: center;
+  font-size: 1.2em;
+  width: 80%;
+  margin-bottom: 20vw;
+}
+@media screen and (min-width: 768px) {
+  #erreurContainer #textErreur {
+    width: auto;
+    font-size: 1.4em;
+    margin-bottom: auto;
+  }
 }
 #erreurContainer #backHome {
   color: #ff6060;

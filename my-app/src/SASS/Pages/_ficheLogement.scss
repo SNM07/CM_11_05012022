@@ -5,52 +5,91 @@
   align-items: center;
   color: $main-color;
   & .carousel {
-    width: 92vw;
-    border-radius: 25px;
+    width: 90vw;
+    border-radius: 10px;
     position: relative;
-    & .flatPic {
-      width: 92vw;
-      height: 50vw;
+    @include large-only {
       border-radius: 25px;
+      width: 92vw;
+    }
+    & .flatPic {
+      width: 90vw;
+      height: 70vw;
+      border-radius: 10px;
       object-fit: cover;
+      @include large-only {
+        border-radius: 25px;
+        width: 92vw;
+        height: 50vw;
+      }
     }
     & .leftArrow {
       position: absolute;
-      top: 21vw;
-      left: 1vw;
+      top: 31vw;
+      left: 2vw;
+      @include large-only {
+        top: 21vw;
+        left: 1vw;
+      }
       & .leftArrowIcon {
         height: 8vw;
       }
     }
     & .rightArrow {
       position: absolute;
-      top: 21vw;
-      right: 1vw;
+      top: 31vw;
+      right: 2vw;
+      @include large-only {
+        top: 21vw;
+        left: 1vw;
+      }
       & .rightArrowIcon {
         height: 8vw;
       }
     }
     & .picCounter {
-      position: absolute;
-      left: 46vw;
-      bottom: 4vw;
-      font-weight: bold;
-      color: white;
+      display: none;
+      @include large-only {
+        display: block;
+        position: absolute;
+        left: 46vw;
+        bottom: 4vw;
+        font-weight: bold;
+        color: white;
+      }
     }
   }
   & .containerInfos {
-    width: 92vw;
+    width: 90vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: 3vw 0 4vw 0;
+    @include large-only {
+      width: 92vw;
+      flex-direction: row;
+    }
+
     & .titleInfos {
       position: relative;
+      margin-bottom: 8vw;
+      @include large-only {
+        margin-bottom: auto;
+      }
       & h1 {
         margin-bottom: 1vw;
-        font-size: 4vw;
+        font-size: 6vw;
+        @include large-only {
+          font-size: 4vw;
+        }
       }
       & h2 {
-        font-size: 2vw;
+        font-size: 4vw;
+        margin-bottom: 12vw;
+        @include large-only {
+          font-size: 2vw;
+          margin-bottom: auto;
+        }
       }
     }
     & .tagsInfos {
@@ -60,23 +99,41 @@
     }
     & .hostInfos {
       display: flex;
-      flex-direction: column;
-      width: 25vw;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 90vw;
+      margin-bottom: 2vw;
+      @include large-only {
+        width: 25vw;
+        flex-direction: column;
+        margin-bottom: auto;
+      }
       & .host {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 17vw;
+        width: 33vw;
         align-self: end;
-        margin-bottom: 3vw;
+        margin-bottom: 0;
+        @include large-only {
+          margin-bottom: 3vw;
+          width: 17vw;
+        }
         & .hostName {
-          font-size: 1.6vw;
+          font-size: 4vw;
           text-align: right;
           line-height: 1.4;
+          @include large-only {
+            font-size: 1.6vw;
+          }
         }
         & .hostPic {
           border-radius: 50%;
-          width: 8vw;
+          width: 12vw;
+          @include large-only {
+            width: 8vw;
+          }
         }
       }
       & .starsRating {
@@ -85,6 +142,14 @@
           display: flex;
           justify-content: space-between;
           width: 22vw;
+          & span {
+            transform: scale(0.6);
+            width: 1%;
+            @include large-only {
+              width: auto;
+              transform: none;
+            }
+          }
         }
       }
     }
@@ -93,10 +158,18 @@
     margin-bottom: 200px;
     display: flex;
     justify-content: space-between;
-    width: 92vw;
+    width: 90vw;
+    flex-direction: column;
+    @include large-only {
+      width: 92vw;
+      flex-direction: row;
+    }
 
     & .aboutContent {
-      width: 42vw;
+      width: 90vw;
+      @include large-only {
+        width: 42vw;
+      }
       & h2 {
         width: auto;
       }
