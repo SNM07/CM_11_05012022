@@ -20,7 +20,7 @@ function App() {
             render={(props) => <FicheLogement {...props} />}
           />
           <Route path="/A-Propos" component={APropos} />
-          <Route path="/" component={Erreur404} />
+          <Route component={Erreur404} />
         </Switch>
         <Footer />
       </Router>

@@ -432,7 +432,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .flatPage .containerInfos .titleInfos h1 {
-    font-size: 4vw;
+    font-size: 3vw;
+    margin-right: 3vw;
   }
 }
 .flatPage .containerInfos .titleInfos h2 {
@@ -467,21 +468,22 @@ body {
 }
 .flatPage .containerInfos .hostInfos .host {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 33vw;
   align-self: end;
+  justify-content: flex-end;
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .flatPage .containerInfos .hostInfos .host {
     margin-bottom: 3vw;
-    width: 17vw;
+    width: 33vw;
   }
 }
 .flatPage .containerInfos .hostInfos .host .hostName {
   font-size: 4vw;
   text-align: right;
+  margin-right: 3vw;
   line-height: 1.4;
 }
 @media screen and (min-width: 768px) {
@@ -596,11 +598,11 @@ body {
   justify-content: center;
   align-items: center;
   color: #ff6060;
-  transform: translate(0, 30%);
 }
 #erreurContainer #titreErreur {
   font-weight: bolder;
   font-size: 20vw;
+  margin-top: 4vw;
 }
 #erreurContainer #textErreur {
   text-align: center;

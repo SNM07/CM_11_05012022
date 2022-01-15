@@ -5,6 +5,8 @@ import Host from "../component/Host";
 import Carousel from "../component/Carousel";
 import Rating from "../component/Rating";
 import ServiceFicheLogement from "../services/ServiceFicheLogement";
+import Erreur404 from "../pages/Erreur404";
+import { Redirect } from "react-router-dom";
 
 class FicheLogement extends Component {
   constructor(props) {

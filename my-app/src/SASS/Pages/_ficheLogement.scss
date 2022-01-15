@@ -80,7 +80,8 @@
         margin-bottom: 1vw;
         font-size: 6vw;
         @include large-only {
-          font-size: 4vw;
+          font-size: 3vw;
+          margin-right: 3vw;
         }
       }
       & h2 {
@@ -111,18 +112,19 @@
       }
       & .host {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 33vw;
         align-self: end;
+        justify-content: flex-end;
         margin-bottom: 0;
         @include large-only {
           margin-bottom: 3vw;
-          width: 17vw;
+          width: 33vw;
         }
         & .hostName {
           font-size: 4vw;
           text-align: right;
+          margin-right: 3vw;
           line-height: 1.4;
           @include large-only {
             font-size: 1.6vw;
