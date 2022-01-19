@@ -27,6 +27,7 @@
       position: absolute;
       top: 31vw;
       left: 2vw;
+      cursor: pointer;
       @include large-only {
         top: 21vw;
         left: 1vw;
@@ -39,6 +40,7 @@
       position: absolute;
       top: 31vw;
       right: 2vw;
+      cursor: pointer;
       @include large-only {
         top: 21vw;
         right: 1vw;

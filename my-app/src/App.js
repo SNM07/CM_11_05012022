@@ -11,7 +11,7 @@ import Erreur404 from "./pages/Erreur404";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/CM_11_05012022">
         <Header />
         <Switch>
           <Route path="/" exact component={Accueil} />
