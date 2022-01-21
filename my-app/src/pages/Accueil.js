@@ -5,6 +5,7 @@ import imageHome from ".././Images/imageHome.png";
 class Accueil extends Component {
   componentDidMount() {
     document.title = "Kasa";
+    window.scrollTo(0, 0);
   }
   render() {
     return (

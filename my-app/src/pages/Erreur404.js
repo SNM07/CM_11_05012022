@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 class Erreur404 extends Component {
   componentDidMount() {
     document.title = "Erreur 404";
+    window.scrollTo(0, 0);
   }
   render() {
     return (

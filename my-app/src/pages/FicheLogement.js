@@ -16,6 +16,7 @@ class FicheLogement extends Component {
 
   componentDidMount() {
     ServiceFicheLogement(this);
+    window.scrollTo(0, 0);
   }
 
   render() {

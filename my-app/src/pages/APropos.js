@@ -30,6 +30,7 @@ const aboutAccordionItems = [
 class APropos extends Component {
   componentDidMount() {
     document.title = "À Propos";
+    window.scrollTo(0, 0);
   }
   render() {
     return (
