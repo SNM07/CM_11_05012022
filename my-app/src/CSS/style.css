@@ -53,7 +53,6 @@ body {
 .aboutContent .aboutText {
   display: none;
   background: #f7f7f7;
-  width: 100%;
   padding: 25px 12px;
   border-radius: 0 0 5px 5px;
   color: #ff6060;
@@ -367,6 +366,7 @@ body {
   position: absolute;
   top: 31vw;
   left: 2vw;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .flatPage .carousel .leftArrow {
@@ -381,6 +381,7 @@ body {
   position: absolute;
   top: 31vw;
   right: 2vw;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .flatPage .carousel .rightArrow {
@@ -542,6 +543,9 @@ body {
 .flatPage .containerDescription .aboutContent h2 {
   width: auto;
 }
+.flatPage .containerDescription .aboutContent .aboutText {
+  width: 100%;
+}
 
 #aboutPage {
   padding-bottom: 200px;
@@ -590,6 +594,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#aboutPage #aboutContainer .aboutContent .aboutText {
+  width: 90vw;
+}
+@media screen and (min-width: 768px) {
+  #aboutPage #aboutContainer .aboutContent .aboutText {
+    width: 100%;
+  }
 }
 
 #erreurContainer {
