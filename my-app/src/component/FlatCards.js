@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ServiceFlatCards from "../services/ServiceFlatCards";
+import { ServiceFlatCards } from "../services/ServiceFlatCards";
 
 import SingleCard from "./SingleCard";
 
@@ -13,8 +13,13 @@ class FlatCards extends Component {
     };
   }
 
+  async initFlatCards() {
+    const data = await ServiceFlatCards();
+    this.setState({ data });
+  }
+
   componentDidMount() {
-    ServiceFlatCards(this);
+    this.initFlatCards();
   }
 
   render() {

@@ -1,29 +1,18 @@
 import "./App.css";
 import "./CSS/style.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-import Accueil from "./pages/Accueil";
-import APropos from "./pages/APropos";
-import FicheLogement from "./pages/FicheLogement";
-import Erreur404 from "./pages/Erreur404";
+import routes from "./Routes";
 
 function App() {
   return (
     <div className="App">
-      <Router basename="/CM_11_05012022">
+      <BrowserRouter basename="/CM_11_05012022">
         <Header />
-        <Switch>
-          <Route path="/" exact component={Accueil} />
-          <Route
-            path="/Fiche-Logement/:id"
-            render={(props) => <FicheLogement {...props} />}
-          />
-          <Route path="/A-Propos" component={APropos} />
-          <Route component={Erreur404} />
-        </Switch>
+        {routes}
         <Footer />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

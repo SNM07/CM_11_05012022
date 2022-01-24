@@ -4,7 +4,7 @@ import Tags from "../component/Tags";
 import Host from "../component/Host";
 import Carousel from "../component/Carousel";
 import Rating from "../component/Rating";
-import ServiceFicheLogement from "../services/ServiceFicheLogement";
+import { ServiceFicheLogement } from "../services/ServiceFicheLogement";
 
 class FicheLogement extends Component {
   constructor(props) {
@@ -14,39 +14,44 @@ class FicheLogement extends Component {
     };
   }
 
+  async initFicheLogement() {
+    const data = await ServiceFicheLogement();
+    const property = data.filter(
+      (property) => property.id === this.props.match.params.id
+    );
+    if (property.length === 0) {
+      this.props.history.push("/Erreur404");
+    } else {
+      this.setState({ data: property[0] });
+    }
+  }
+
   componentDidMount() {
-    ServiceFicheLogement(this);
+    this.initFicheLogement();
     window.scrollTo(0, 0);
   }
 
   render() {
-    document.title = this.state.data.title;
-
     const { data } = this.state;
-    const tagsData = this.state.data.tags;
-    const hostData = this.state.data.host;
-    const pictureData = this.state.data.pictures;
-    const ratingData = this.state.data.rating;
+    const { tags, host, pictures, rating } = data;
+    document.title = data.title;
 
     return (
       <div className="flatPage">
-        <Carousel images={pictureData} />
+        <Carousel images={pictures} />
 
         <div className="containerInfos">
           <div className="titleInfos">
             <h1>{data.title}</h1>
             <h2>{data.location}</h2>
             <div className="tagsInfos">
-              {tagsData &&
-                tagsData.map((tag, i) => <Tags key={i} name={tag} />)}
+              {tags && tags.map((tag, i) => <Tags key={i} name={tag} />)}
             </div>
           </div>
           <div className="hostInfos">
-            {hostData && (
-              <Host name={hostData.name} avatar={hostData.picture} />
-            )}
+            {host && <Host name={host.name} avatar={host.picture} />}
             <div className="starsRating">
-              <Rating rating={ratingData && ratingData} />
+              <Rating rating={rating && rating} />
             </div>
           </div>
         </div>
